@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center">
 <a href="https://www.buymeacoffee.com/SaNhE76x9" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style="height: 30px !important;width: 150px !important;" ></a>
 </p>
@@ -25,3 +26,6 @@ Flutter is Google’s portable UI toolkit for building beautiful, natively-compi
 If this is template is useful for you and you want to support me [buy me a coffe!](https://www.buymeacoffee.com/SaNhE76x9). This will give me motivation to keep doing more content like this. 
 
 Do you want to add more features? [Reach me out](https://lnk.bio/9dQ4)
+=======
+# D-Italia-Mobile
+>>>>>>> 34bcf943a3461315687250038510325372fa8b7e
