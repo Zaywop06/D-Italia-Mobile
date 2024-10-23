@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "140879282910",
+    "firebase_url": "https://d-italia-13fb9-default-rtdb.firebaseio.com",
+    "project_id": "d-italia-13fb9",
+    "storage_bucket": "d-italia-13fb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140879282910:android:32b752b49243bd67a6384f",
+        "android_client_info": {
+          "package_name": "com.example.flutter_ecommerce_template"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu-uHIcpxkfmhS5bm53UGBGcBQb6x1qWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
