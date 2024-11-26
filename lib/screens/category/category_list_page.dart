@@ -39,8 +39,8 @@ class _CategoryListPageState extends State<CategoryListPage> {
         setState(() {
           categories = categoryList.map((item) {
             return Category(
-              Color(0xffFCE183), // Ajustar colores si es necesario
-              Color(0xffF68D7F),
+              Color.fromARGB(255, 65, 65, 65), // Ajustar colores si es necesario
+              Color.fromARGB(255, 0, 0, 0),
               item['nombre'], // Asignar el nombre de la categoría
               'assets/jeans_5.png', // Cambia esto si tienes imágenes específicas
             );

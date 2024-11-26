@@ -36,26 +36,26 @@ class _IntroPageState extends State<IntroPage> {
                     Center(
                       child: Image.asset(
                         'assets/firstScreen.png',
-                        height: 200,
-                        width: 200,
+                        height: 265,
+                        width: 265,
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 32),
                       child: Text(
-                        'Get Any Thing Online',
+                        'Encuentra tu Vestido Ideal',
                         textAlign: TextAlign.right,
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
+                            fontWeight: FontWeight.bold, fontSize: 18),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 32, vertical: 16.0),
                       child: Text(
-                        'You can buy anything ranging from digital products to hardware within few clicks.',
+                        'Explora una amplia variedad de vestidos de XV años, bodas y accesorios perfectos para hacer de tu evento algo único.',
                         textAlign: TextAlign.right,
-                        style: TextStyle(color: Colors.grey, fontSize: 12.0),
+                        style: TextStyle(color: Colors.grey, fontSize: 13.0),
                       ),
                     ),
                   ],
@@ -66,7 +66,7 @@ class _IntroPageState extends State<IntroPage> {
                   children: <Widget>[
                     Center(
                       child: Image.asset(
-                        'assets/secondScreen.png',
+                        'assets/descarga.png',
                         height: 200,
                         width: 200,
                       ),
@@ -74,19 +74,19 @@ class _IntroPageState extends State<IntroPage> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 32),
                       child: Text(
-                        'Shipping to anywhere ',
+                        'Compra y Recoge en Tienda',
                         textAlign: TextAlign.right,
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
+                            fontWeight: FontWeight.bold, fontSize: 18),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 32, vertical: 16.0),
                       child: Text(
-                        'We will ship to anywhere in the world, With 30 day 100% money back policy.',
+                        'Compra desde la app y agenda tu cita para recoger tu vestido en nuestra tienda en el día y la hora que prefieras.',
                         textAlign: TextAlign.right,
-                        style: TextStyle(color: Colors.grey, fontSize: 12.0),
+                        style: TextStyle(color: Colors.grey, fontSize: 13.0),
                       ),
                     ),
                   ],
@@ -105,7 +105,7 @@ class _IntroPageState extends State<IntroPage> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 32),
                       child: Text(
-                        'On-time delivery',
+                        'Preparado para tu Gran Día',
                         textAlign: TextAlign.right,
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 16),
@@ -115,7 +115,7 @@ class _IntroPageState extends State<IntroPage> {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 32, vertical: 16.0),
                       child: Text(
-                        'You can track your product with our powerful tracking service.',
+                        'Disfruta de una experiencia de compra personalizada para que encuentres justo lo que necesitas para esa ocasión especial.',
                         textAlign: TextAlign.right,
                         style: TextStyle(color: Colors.grey, fontSize: 12.0),
                       ),

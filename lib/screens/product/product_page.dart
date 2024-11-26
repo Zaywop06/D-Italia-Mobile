@@ -45,7 +45,7 @@ class _ProductPageState extends State<ProductPage> {
             ],
             borderRadius: BorderRadius.circular(9.0)),
         child: Center(
-          child: Text("View Product",
+          child: Text("Ver producto",
               style: const TextStyle(
                   color: const Color(0xfffefefe),
                   fontWeight: FontWeight.w600,
@@ -72,7 +72,7 @@ class _ProductPageState extends State<ProductPage> {
           )
         ],
         title: Text(
-          'Headphones',
+          'Accesorios',
           style: const TextStyle(
               color: darkGrey, fontWeight: FontWeight.w500, fontSize: 18.0),
         ),
@@ -99,32 +99,49 @@ class _ProductPageState extends State<ProductPage> {
                     style: const TextStyle(
                         color: const Color(0xFFFEFEFE),
                         fontWeight: FontWeight.w600,
-                        fontSize: 20.0),
+                        fontSize: 30.0),
                   ),
                 ),
                 SizedBox(
                   height: 24.0,
                 ),
+                // Padding(
+                //   padding: const EdgeInsets.only(left: 20.0),
+                //   child: Row(
+                //     children: <Widget>[
+                //       Container(
+                //         width: 90,
+                //         height: 40,
+                //         decoration: BoxDecoration(
+                //           color: Color.fromRGBO(0, 0, 0, 1),
+                //           borderRadius: BorderRadius.circular(4.0),
+                //           border:
+                //               Border.all(color: Color(0xFFFFFFFF), width: 0.5),
+                //         ),
+                //         child: Center(
+                //           child: new Text("Ver más",
+                //               style: const TextStyle(
+                //                   color: const Color(0xeefefefe),
+                //                   fontWeight: FontWeight.w300,
+                //                   fontStyle: FontStyle.normal,
+                //                   fontSize: 12.0)),
+                //         ),
+                //       )
+                //     ],
+                //   ),
+                // ),
                 Padding(
                   padding: const EdgeInsets.only(left: 20.0),
                   child: Row(
                     children: <Widget>[
                       Container(
-                        width: 90,
-                        height: 40,
-                        decoration: BoxDecoration(
-                          color: Color.fromRGBO(253, 192, 84, 1),
-                          borderRadius: BorderRadius.circular(4.0),
-                          border:
-                              Border.all(color: Color(0xFFFFFFFF), width: 0.5),
-                        ),
                         child: Center(
-                          child: new Text("Details",
+                          child: new Text("Descripción:",
                               style: const TextStyle(
-                                  color: const Color(0xeefefefe),
-                                  fontWeight: FontWeight.w300,
+                                  color: Color.fromARGB(237, 0, 0, 0),
+                                  fontWeight: FontWeight.w900,
                                   fontStyle: FontStyle.normal,
-                                  fontSize: 12.0)),
+                                  fontSize: 20.0)),
                         ),
                       )
                     ],
@@ -139,10 +156,9 @@ class _ProductPageState extends State<ProductPage> {
                     child: new Text(product.description,
                         style: const TextStyle(
                             color: const Color(0xfefefefe),
-                            fontWeight: FontWeight.w800,
                             fontFamily: "NunitoSans",
                             fontStyle: FontStyle.normal,
-                            fontSize: 16.0)))
+                            fontSize: 18.0)))
               ],
             ),
           ),
@@ -155,8 +171,8 @@ class _ProductPageState extends State<ProductPage> {
                   gradient: LinearGradient(
                       colors: [
                     Color.fromRGBO(255, 255, 255, 0),
-                    Color.fromRGBO(253, 192, 84, 0.5),
-                    Color.fromRGBO(253, 192, 84, 1),
+                    Color.fromRGBO(253, 160, 84, 0.498),
+                    Color.fromRGBO(253, 137, 84, 1),
                   ],
                       begin: FractionalOffset.topCenter,
                       end: FractionalOffset.bottomCenter)),

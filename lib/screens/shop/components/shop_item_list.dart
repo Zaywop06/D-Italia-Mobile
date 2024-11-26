@@ -21,7 +21,7 @@ class _ShopItemListState extends State<ShopItemList> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 20),
+      margin: EdgeInsets.only(top: 8),
       height: 130,
       child: Stack(
         children: <Widget>[
@@ -43,11 +43,11 @@ class _ShopItemListState extends State<ShopItemList> {
                         padding: EdgeInsets.only(top: 12.0, right: 12.0),
                         width: 200,
                         child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.end,
                           children: <Widget>[
                             Text(
                               widget.product.name,
-                              textAlign: TextAlign.right,
+                              textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 12,
@@ -64,7 +64,8 @@ class _ShopItemListState extends State<ShopItemList> {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: <Widget>[
-                                    ColorOption(Colors.red),
+                                    ColorOption(
+                                        const Color.fromARGB(255, 255, 255, 255)),
                                     Text(
                                       '\$${widget.product.price}',
                                       textAlign: TextAlign.center,
@@ -84,17 +85,17 @@ class _ShopItemListState extends State<ShopItemList> {
                           data: ThemeData(
                               // accentColor: Colors.black,
                               textTheme: TextTheme(
-                                headlineSmall: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 14,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold),
-                                bodyMedium: TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 12,
-                                  color: Colors.grey[400],
-                                ),
-                              )),
+                            headlineSmall: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 14,
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold),
+                            bodyMedium: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: 12,
+                              color: Colors.grey[400],
+                            ),
+                          )),
                           child: NumberPicker(
                             value: quantity,
                             minValue: 1,

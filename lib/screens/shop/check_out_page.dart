@@ -17,12 +17,12 @@ class _CheckOutPageState extends State<CheckOutPage> {
   SwiperController swiperController = SwiperController();
 
   List<Product> products = [
-    Product('assets/headphones.png',
-        'Boat roackerz 400 On-Ear Bluetooth Headphones', 'description', 45.3),
-    Product('assets/headphones_2.png',
-        'Boat roackerz 100 On-Ear Bluetooth Headphones', 'description', 22.3),
-    Product('assets/headphones_3.png',
-        'Boat roackerz 300 On-Ear Bluetooth Headphones', 'description', 58.3)
+    Product('assets/sophia.png',
+        'Vestido de XV Años "Sophia"', 'description', 11599.99),
+    Product('assets/valeria.png',
+        'Vestido de XV Años "Valeria"', 'description', 10000.99),
+    Product('assets/135.png',
+        'Ramo de novia clásico', 'description', 649.99)
   ];
 
   @override
@@ -44,7 +44,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
             ],
             borderRadius: BorderRadius.circular(9.0)),
         child: Center(
-          child: Text("Check Out",
+          child: Text("Proceder a la compra",
               style: const TextStyle(
                   color: const Color(0xfffefefe),
                   fontWeight: FontWeight.w600,
@@ -62,13 +62,13 @@ class _CheckOutPageState extends State<CheckOutPage> {
         iconTheme: IconThemeData(color: darkGrey),
         actions: <Widget>[
           IconButton(
-            icon: Image.asset('assets/icons/denied_wallet.png'),
+            icon: Icon(Icons.attach_money), color: Colors.black, iconSize: 38,
             onPressed: () => Navigator.of(context)
                 .push(MaterialPageRoute(builder: (_) => UnpaidPage())),
           )
         ],
         title: Text(
-          'Checkout',
+          'Carrito',
           style: TextStyle(
               color: darkGrey, fontWeight: FontWeight.w500, fontSize: 18.0),
         ),
@@ -106,7 +106,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
                   ),
                 ),
                 SizedBox(
-                  height: 300,
+                  height: 450,
                   child: Scrollbar(
                     child: ListView.builder(
                       itemBuilder: (_, index) => ShopItemList(
@@ -121,30 +121,30 @@ class _CheckOutPageState extends State<CheckOutPage> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Text(
-                    'Payment',
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: darkGrey,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
-                SizedBox(
-                  height: 250,
-                  child: Swiper(
-                    itemCount: 2,
-                    itemBuilder: (_, index) {
-                      return CreditCard();
-                    },
-                    scale: 0.8,
-                    controller: swiperController,
-                    viewportFraction: 0.6,
-                    loop: false,
-                    fade: 0.7,
-                  ),
-                ),
+                // Padding(
+                //   padding: const EdgeInsets.all(16.0),
+                //   child: Text(
+                //     'Payment',
+                //     style: TextStyle(
+                //         fontSize: 20,
+                //         color: darkGrey,
+                //         fontWeight: FontWeight.bold),
+                //   ),
+                // ),
+                // SizedBox(
+                //   height: 250,
+                //   child: Swiper(
+                //     itemCount: 2,
+                //     itemBuilder: (_, index) {
+                //       return CreditCard();
+                //     },
+                //     scale: 0.8,
+                //     controller: swiperController,
+                //     viewportFraction: 0.6,
+                //     loop: false,
+                //     fade: 0.7,
+                //   ),
+                // ),
                 SizedBox(height: 24),
                 Center(
                     child: Padding(

@@ -17,9 +17,9 @@ class ProductDisplay extends StatelessWidget {
             top: 30.0,
             right: 0,
             child: Container(
-                width: MediaQuery.of(context).size.width / 1.5,
-                height: 85,
-                padding: EdgeInsets.only(right: 24),
+                width: MediaQuery.of(context).size.width / 2.3,
+                height: 75,
+                padding: EdgeInsets.only(right: 12),
                 decoration: new BoxDecoration(
                     color: darkGrey,
                     borderRadius: BorderRadius.only(
@@ -41,20 +41,20 @@ class ProductDisplay extends StatelessWidget {
                             color: const Color(0xFFFFFFFF),
                             fontWeight: FontWeight.w400,
                             fontFamily: "Montserrat",
-                            fontSize: 36.0)),
+                            fontSize: 26.0)),
                     TextSpan(
-                        text: '.58',
+                        text: '.99',
                         style: const TextStyle(
                             color: const Color(0xFFFFFFFF),
                             fontWeight: FontWeight.w400,
                             fontFamily: "Montserrat",
-                            fontSize: 18.0))
+                            fontSize: 15.0))
                   ])),
                 ))),
         Align(
           alignment: Alignment(-1, 0),
           child: Padding(
-            padding: const EdgeInsets.only(right: 20.0, left: 20.0),
+            padding: const EdgeInsets.only(right: 20.0, left: 15.0),
             child: Container(
               height: screenAwareSize(220, context),
               child: Stack(

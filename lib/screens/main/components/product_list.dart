@@ -170,8 +170,8 @@ class ProductCard extends StatelessWidget {
               tag: product.image,
               child: Image.asset(
                 product.image,
-                height: height / 1.7,
-                width: width / 1.4,
+                height: height / 1.3,
+                width: width / 1.2,
                 fit: BoxFit.contain,
               ),
             ),

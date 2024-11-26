@@ -22,12 +22,13 @@ class ProfilePage extends StatelessWidget {
               children: <Widget>[
                 CircleAvatar(
                   maxRadius: 48,
-                  backgroundImage: AssetImage('assets/background.jpg'),
+                  // backgroundImage: AssetImage('assets/background.jpg'),
+                  backgroundImage: AssetImage('assets/logo-ilustracion.png'),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'Rose Helbert',
+                    'Usiel Colin',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -116,7 +117,7 @@ class ProfilePage extends StatelessWidget {
                   title: Text('Settings'),
                   subtitle: Text('Privacy and logout'),
                   leading: FaIcon(
-                  FontAwesomeIcons.screwdriverWrench, size: 32),
+                  FontAwesomeIcons.screwdriverWrench, size: 32,),
                   trailing: Icon(Icons.chevron_right, color: yellow),
                   onTap: () => Navigator.of(context).push(
                       MaterialPageRoute(builder: (_) => SettingsPage())),
